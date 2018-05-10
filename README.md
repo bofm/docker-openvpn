@@ -1,3 +1,9 @@
+# Forked from kylemanna/docker-openvpn
+
+### Changed:
+
+* tls-crypt instead of tls-auth
+
 # OpenVPN for Docker
 
 [![Build Status](https://travis-ci.org/kylemanna/docker-openvpn.svg)](https://travis-ci.org/kylemanna/docker-openvpn)
