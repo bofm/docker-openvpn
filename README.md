@@ -20,7 +20,8 @@
 
 * Initialize the `$OVPN_DATA` container that will hold the configuration files
   and certificates.  The container will prompt for a passphrase to protect the
-  private key used by the newly generated certificate authority.
+  private key used by the newly generated certificate authority. Replace 
+  `VPN.SERVERNAME.COM` with IP address or public hostname of your server.
 
         docker volume create --name $OVPN_DATA
         docker run -v $OVPN_DATA:/etc/openvpn --rm vpn ovpn_genconfig -u udp://VPN.SERVERNAME.COM
@@ -43,7 +44,7 @@
 
         docker exec vpn-udp tar -cz /etc/openvpn > ovpn_data.tar.gz
 
-# _____Original README goes below____________________________________________________________________
+!** ____________Original README goes below____________________________________________________________________**
 
 # OpenVPN for Docker
 
